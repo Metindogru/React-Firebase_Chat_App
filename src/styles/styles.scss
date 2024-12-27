@@ -8,9 +8,9 @@
 
 body {
   background: #242424;
-  color: #fff;
+  color: white;
   min-height: 100vh;
-  font-family: "Poppins", serif;
+  font-family: "poppins";
 }
 
 button {
@@ -27,17 +27,17 @@ button {
   transition: all 0.3s;
 
   &:hover {
-    filter: brightness(60&);
+    filter: brightness(60%);
   }
 }
 
-//* GİRİŞ SAYFASI
 .container {
   height: 100vh;
   display: grid;
   place-items: center;
 }
 
+// Giriş Yapısı
 .login {
   background: white;
   color: black;
@@ -47,8 +47,8 @@ button {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 50px;
 
   @media (max-width: 700px) {
@@ -62,7 +62,7 @@ button {
   }
 }
 
-//* Oda Seçme Sayfası
+// Oda seçme sayfası
 .room-page {
   background: white;
   color: #1a1a1a;
@@ -85,11 +85,11 @@ button {
   }
 
   button:last-child {
-    background: red;
+    background: crimson;
   }
 }
 
-//* Sohbet Sayfası
+// Sohbet Sayfası
 .chat-page {
   background: white;
   height: 70vh;
@@ -108,7 +108,7 @@ button {
   }
 
   header {
-    background: #0b3ce0;
+    background: #4d4c7d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +116,7 @@ button {
   }
 
   .message-form {
-    background-color: #0b3ce0;
+    background-color: #4d4c7d;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -163,15 +163,15 @@ button {
 }
 
 .chat-page main {
-  flex: -1;
+  flex: 1;
   display: flex;
-  color: black;
   flex-direction: column;
+  color: black;
   overflow-y: auto;
   overflow-x: hidden;
   gap: 10px;
   padding: 10px;
-  width: 100&;
+  width: 100%;
 
   .warn {
     flex: 1;
@@ -184,7 +184,6 @@ button {
     @extend .message;
     background: #f99417;
     align-self: end;
-    padding: 4px 8px;
     border-radius: 7px 7px 0 7px;
     color: white;
   }

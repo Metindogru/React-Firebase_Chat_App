@@ -11,9 +11,7 @@ const Message = ({ data }) => {
 
   return (
     <div className="msg-other">
-      <div>
-        <img src={data.author.photo} alt="" />
-      </div>
+      <img src={data.author.photo} alt="" />
       <div>
         <span
           style={{ color: generateColor(data.author.id, data.author.name) }}

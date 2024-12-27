@@ -48,7 +48,7 @@ const ChatPage = ({ room, setRoom }) => {
       <form onSubmit={handleSubmit} className="message-form">
         <input
           type="text"
-          placeholder="mesajınızı yazınız..."
+          placeholder="mesajınızı yazınız"
           onChange={(e) => setText(e.target.value)}
           value={text}
         />
@@ -66,7 +66,7 @@ const ChatPage = ({ room, setRoom }) => {
             type="button"
             onClick={() => setIsOpen(!isOpen)}
           >
-            😁
+            😂
           </button>
         </div>
 
